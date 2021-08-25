@@ -1,3 +1,4 @@
+# the functions for the server for the assignments tab
 # outputs a table of basic stats for the questions on an assessment
 itemStatsFun <- function(assessmentDf){
   something <- assessmentDf %>% group_by(., Ident) %>% 

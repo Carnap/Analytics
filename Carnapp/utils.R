@@ -1,3 +1,6 @@
+# all the functions that are used in the global environment
+
+
 #function to replace the white space in titles so that they can be used in urls.
 whiteSpaceReplace <- function(x){stri_replace_all_regex(x, "\\s+", '%20')}
 

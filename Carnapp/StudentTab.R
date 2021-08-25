@@ -1,3 +1,4 @@
+# UI for the student data tab
 StudentTab <- tabPanel("Individual Student Averages and Submissions",
                        
                        fluidRow(uiOutput("studentsDrop")),

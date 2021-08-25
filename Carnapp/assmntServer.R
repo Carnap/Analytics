@@ -1,7 +1,7 @@
 
 
 
-# get the data for a particular assignment
+# get the data for a particular assignment from carnap
 assignmentChoiceFun <- function(theapikey, userEmail, courseName, courseTZ, assgnName, assgnList, studentList, extensionList){
   assignment <- filter(assgnList, Title==assgnName)
   

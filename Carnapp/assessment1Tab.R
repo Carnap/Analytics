@@ -1,5 +1,5 @@
 assessmentTab <- tabPanel("Summary Stats",  
-                                      # Assessment inputs ----
+                                      # Assessment inputs 
                                       fluidRow(
                                        
                                         column(3, radioButtons("score", h4("Plot score in terms of"),

@@ -1,3 +1,4 @@
+# the UI for the download tab
 downloadTab <- tabPanel("Download Submission Data", useShinyjs(),
                         
                         fluidRow(h2("Choose columns you wish to exclude from download (Submit Choices to preview table below)"), column(3,uiOutput("downloadVariables1")), 

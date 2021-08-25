@@ -5,9 +5,6 @@ source('StudentServer.R')
 
 carnapServer <- function(input, output, session){
   
-  # create a list of documents for that instructor with information about their assignments
-  #docsDf <- reactive({docDfFun(input$API, input$Email)})  
-
 ##### global reactive things  
     
   # create the list to populate the class list drop down menu in the first tab
