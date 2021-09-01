@@ -55,7 +55,13 @@ assessmenthistoFun <- function(assessmentDf, assmentTitle, scoretype){
 }
 
 # calculates Cronbach's alpha for an assessment
+#AlphaFunction <- function(assessmentData){
+#  assessmentData %>%
+#    select(., -TotalScore) %>% CronbachAlpha()
+#} 
+
+# calculates Cronbach's alpha for an assessment
 AlphaFunction <- function(assessmentData){
   assessmentData %>%
-    select(., -TotalScore) %>% CronbachAlpha()
-}  
+    select(., -TotalScore) %>% cronbach() %>% .[3]
+}
