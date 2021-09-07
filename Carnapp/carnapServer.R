@@ -8,7 +8,9 @@ carnapServer <- function(input, output, session){
 ##### global reactive things  
     
   # create the list to populate the class list drop down menu in the first tab
-  classesList <- reactive({courseListFun(input$API, input$Email)})
+  #classesList <- reactive({courseListFun(input$API, input$Email)})
+  classesList <- eventReactive(input$EmailandAPI, {courseListFun(input$API, input$Email)})
+  
   
   # dropdown of the classes an instructor has taught on carnap
   output$classesDrop <- renderUI({

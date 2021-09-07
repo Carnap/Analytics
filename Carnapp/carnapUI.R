@@ -26,7 +26,8 @@ carnapUI <- navbarPage("Carnap Analytics",
                                          textInput("API", h3("API key"),
                                                    value = ""),
                                          
-                                         #submitButton("Submit")
+                                         actionButton("EmailandAPI", "Submit"), 
+                                         helpText('Hit submit after entering your details to see a list of your classes.')
                                          
                             ),
                             
